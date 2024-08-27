@@ -1,0 +1,19 @@
+.imageGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.imageGalleryItem {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageGalleryItem:hover {
+  transform: scale(1.05);
+}
