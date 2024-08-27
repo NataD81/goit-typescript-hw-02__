@@ -6,5 +6,5 @@ export interface Image {
 
 export interface ImageGalleryProps {
   images: Image[];
-  openModal: (image: any) => void;
+  openModal: (image: Image) => void;
 }

@@ -6,9 +6,9 @@ import ImageGallery from "../ImageGallery/ImageGallery";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
-import { Image } from "./App.types";
 import s from "./App.module.css";
 import React from "react";
+import { FetchImagesResponse, Image } from "../../types/types"
 
 const ACCESS_KEY = "Mt8-8IPpq1emOqYEqNkvEgtQDZJ-h2J5CjyYF2WE_M4";
 
@@ -28,7 +28,7 @@ const App: React.FC = () => {
       setError(null);
 
       try {
-        const res = await axios.get("https://api.unsplash.com/search/photos", {
+        const res = await axios.get<FetchImagesResponse>("https://api.unsplash.com/search/photos", {
           params: { query, page, per_page: 12 },
           headers: {
             Authorization: `Client-ID ${ACCESS_KEY}`,
