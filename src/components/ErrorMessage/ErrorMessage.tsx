@@ -1,3 +1,4 @@
+import React from "react";
 import s from "./ErrorMessage.module.css";
 
 interface ErrorMessageProps {

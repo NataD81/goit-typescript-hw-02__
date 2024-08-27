@@ -8,6 +8,7 @@ import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import { Image } from "./App.types";
 import s from "./App.module.css";
+import React from "react";
 
 const ACCESS_KEY = "Mt8-8IPpq1emOqYEqNkvEgtQDZJ-h2J5CjyYF2WE_M4";
 

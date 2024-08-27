@@ -1,6 +1,7 @@
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import s from "./SearchBar.module.css";
+import React from "react";
 
 interface SearchBarProps {
   onSubmit: (query: string) => void;
